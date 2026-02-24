@@ -9,7 +9,7 @@ uv add "mcp[cli]"
 ```
 
 ## Configure your client
-On Windows, run `win_gen_setting.bat` to auto-generate `mcp_setting.json`, or configure manually:
+Run `gen_setting.pyw` to auto-generate `mcp_setting.json`, or configure manually:
 ```json
 {
   "mcpServers": {
