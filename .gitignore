@@ -1,0 +1,6 @@
+__pycache__/
+.python-version
+.venv
+*.log
+*.lock
+mcp_setting.json
