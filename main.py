@@ -3,15 +3,15 @@ from pydantic import Field
 from mcp.server.fastmcp import FastMCP
 import logging
 
-TOOL_NAME = "math"
+SERVER_NAME = "math"
 
-mcp = FastMCP(TOOL_NAME)
+mcp = FastMCP(SERVER_NAME)
 
-file_handler = logging.FileHandler(f'{TOOL_NAME}.log', mode='a')
+file_handler = logging.FileHandler(f'{SERVER_NAME}.log', mode='a')
 logger = logging.getLogger()
 # logger.setLevel(logging.INFO)
 logger.addHandler(file_handler)
-logging.info(f"{TOOL_NAME} MCP server initialized")
+logging.info(f"{SERVER_NAME} MCP server initialized")
 
 @mcp.tool()
 def add(

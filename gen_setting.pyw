@@ -1,12 +1,12 @@
 from pathlib import Path
-from main import TOOL_NAME
+from main import SERVER_NAME
 
 DIR = str(Path(__file__).parent.resolve()).replace("\\", "\\\\")
 
 open("mcp_setting.json", "w").write(f"""\
 {{
   "mcpServers": {{
-    "{TOOL_NAME}": {{
+    "{SERVER_NAME}": {{
       "timeout": 60,
       "type": "stdio",
       "command": "uv",
